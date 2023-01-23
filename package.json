@@ -1,0 +1,32 @@
+{
+  "name": "psnachle",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "build": "mkdir static && ln -f src/index.html static/index.html && esbuild --loader:.webp=file --public-path=/static --bundle src/app.tsx --outdir=static --target=es2020 --minify --sourcemap",
+    "verify": "prettier -w src && eslint --fix --max-warnings=0 src && stylelint --fix src/**/*.css && tsc --noEmit"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.48.2",
+    "esbuild": "^0.17.3",
+    "eslint": "^8.32.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-sonarjs": "^0.18.0",
+    "prettier": "^2.8.3",
+    "stylelint": "^14.16.1",
+    "stylelint-config-idiomatic-order": "^9.0.0",
+    "stylelint-config-prettier": "^9.0.4",
+    "stylelint-config-standard": "^29.0.0"
+  },
+  "dependencies": {
+    "@typescript-eslint/parser": "^5.0.0",
+    "typescript": "^4.9.4"
+  }
+}

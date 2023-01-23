@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es2019",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "jsx": "react",
+    "tsBuildInfoFile": ".tsbuildinfo",
+    "incremental": true,
+    "strict": true
+  },
+  "exclude": ["static"]
+}

@@ -1,0 +1,37 @@
+{
+  "env": { "browser": true, "es6": true },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:@typescript-eslint/strict",
+    "plugin:eslint-comments/recommended",
+    "plugin:prettier/recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:sonarjs/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": { "project": "tsconfig.json", "sourceType": "module" },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "plugins": ["eslint-plugin-react", "sonarjs", "@typescript-eslint"],
+  "rules": {
+    "@typescript-eslint/array-type": ["error", { "default": "generic" }],
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "react/jsx-sort-props": "error",
+    "react/self-closing-comp": "error",
+    "camelcase": "error",
+    "spaced-comment": "error",
+    "eqeqeq": ["error", "smart"],
+    "sort-imports": [
+      "error",
+      {
+        "allowSeparatedGroups": true
+      }
+    ]
+  }
+}
