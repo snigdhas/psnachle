@@ -1,3 +1,24 @@
-.app-container {
-  background-color: pink;
+:root {
+  --text-color: #dae0e6;
+  --background-color: #0b0d26;
+  --bs-font-sans-serif: "Montserrat", system-ui, -apple-system, "Segoe UI",
+    "Roboto", "Helvetica Neue", "Noto Sans", "Liberation Sans", "Arial",
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+.navbar-nav {
+  --bs-nav-link-color: #dae0e6;
+  --bs-nav-link-hover-color: #a4bcd4;
+  --bs-nav-link-active-color: #e1f0ff;
+  --bs-nav-link-disabled-color: #d2d2d2;
+}
+
+.navbar-brand {
+  --bs-navbar-brand-color: #dae0e6;
+  --bs-navbar-brand-hover-color: #a4bcd4;
 }
