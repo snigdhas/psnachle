@@ -5,7 +5,7 @@ import Home from "./components/Home";
 import Layout from "./components/Layout";
 import OurStory from "./components/OurStory";
 
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 
 import React from "react";
@@ -17,7 +17,7 @@ import "./app.css";
 const App = () => {
   return (
     <HelmetProvider>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route element={<Layout />} path="/">
             <Route element={<OurStory />} path="ourstory" />
@@ -27,7 +27,7 @@ const App = () => {
             <Route element={<Home />} path="*" />
           </Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </HelmetProvider>
   );
 };
