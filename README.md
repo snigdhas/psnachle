@@ -1,7 +1,7 @@
 # psnachle
 
-```
-pnpm verify
-pnpm build --watch
-open static/index.html
-```
+lint: `pnpm verify`
+
+build: `pnpm build --watch`
+
+run: `open static/index.html`
