@@ -9,6 +9,7 @@ const OurStory = () => {
       <Helmet>
         <title>Our Story</title>
       </Helmet>
+      <div className="text-light">coming soon!</div>
     </Container>
   );
 };
