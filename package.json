@@ -6,7 +6,7 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    "build": "mkdir -p static && ln -f src/index.html static/index.html && esbuild --loader:.webp=file --public-path=/static --bundle src/app.tsx --outdir=static --target=es2020 --minify --sourcemap",
+    "build": "mkdir -p static && ln -f src/index.html static/index.html && esbuild --loader:.webp=file --bundle src/app.tsx --outdir=static --target=es2020 --minify --sourcemap",
     "verify": "prettier -w src && eslint --fix --max-warnings=0 src && stylelint --fix src/**/*.css && tsc --noEmit"
   },
   "dependencies": {

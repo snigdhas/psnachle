@@ -14,6 +14,7 @@ body {
 .navbar {
   --bs-navbar-active-color: #e1f0ff;
 }
+
 .navbar-nav {
   --bs-nav-link-color: #dae0e6;
   --bs-nav-link-hover-color: #a4bcd4;
