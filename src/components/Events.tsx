@@ -3,7 +3,6 @@ import * as React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import { Container } from "react-bootstrap";
 import { Helmet } from "react-helmet-async";
-import { Link } from "react-router-dom";
 import diwali1 from "../img/Diwali1.webp";
 import diwali2 from "../img/Diwali2.webp";
 import svbdc1 from "../img/SVBDC1.webp";
@@ -26,11 +25,16 @@ const Events = () => {
         <div className="p-4">
           Whether it&apos;s a Diwali party, sangeet, jaggo, first dance, or any
           other event, we&apos;d love to help you create a dance performance
-          that will be sure to impress your guests!{" "}
-          <Link className="link-secondary" to="/contact-us">
-            Contact us
-          </Link>{" "}
-          to learn more.
+          that will be sure to impress your guests! Contact us via{" "}
+          <a
+            className="link-secondary"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSd9T-inzxNsK5WYsr3hXYWbIlIMX4DzZ5tsrxR2QIQq5YGphw/viewform"
+            rel="noreferrer"
+            target={"_blank"}
+          >
+            this form
+          </a>{" "}
+          for more information.
         </div>
       </section>
       <Carousel className="w-50">
