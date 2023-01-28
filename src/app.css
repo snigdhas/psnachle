@@ -11,6 +11,10 @@ body {
   background-color: var(--background-color);
 }
 
+.link-secondary {
+  color: #a4bcd4 !important;
+}
+
 .navbar {
   --bs-navbar-active-color: #e1f0ff;
 }

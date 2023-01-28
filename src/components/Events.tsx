@@ -27,7 +27,10 @@ const Events = () => {
           Whether it&apos;s a Diwali party, sangeet, jaggo, first dance, or any
           other event, we&apos;d love to help you create a dance performance
           that will be sure to impress your guests!{" "}
-          <Link to="/contact-us">Contact us</Link> to learn more.
+          <Link className="link-secondary" to="/contact-us">
+            Contact us
+          </Link>{" "}
+          to learn more.
         </div>
       </section>
       <Carousel className="w-50">
