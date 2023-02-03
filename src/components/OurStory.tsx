@@ -1,8 +1,8 @@
 import * as React from "react";
 
 import Carousel from "react-bootstrap/Carousel";
-import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/esm/Col";
+import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 
 import { Helmet } from "react-helmet-async";
@@ -56,7 +56,7 @@ const OurStory = () => {
         <Col sm={5}>
           <Carousel className="w-100">
             {images.map(({ img, title }) => (
-              <Carousel.Item>
+              <Carousel.Item key={title}>
                 <img className="d-block w-100" src={img} />
                 <Carousel.Caption>
                   <h2>{title}</h2>
