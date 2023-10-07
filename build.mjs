@@ -14,7 +14,6 @@ const ctx = await esbuild.context({
   target: "es2020",
   plugins: [
     sentryEsbuildPlugin({
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
       authToken: process.env.SENTRY_AUTH_TOKEN,
       org: "snigdhas",
       project: "psnache",
