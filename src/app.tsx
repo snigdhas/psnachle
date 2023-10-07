@@ -1,3 +1,5 @@
+import * as Sentry from "@sentry/react";
+
 import Classes from "./components/Classes";
 import ContactUs from "./components/ContactUs";
 import Events from "./components/Events";
@@ -13,6 +15,10 @@ import ReactDOM from "react-dom/client";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./app.css";
+
+Sentry.init({
+  dsn: "https://df1827e239b82c0d2560a6a16a5bc0ef@o4504532816560128.ingest.sentry.io/4506006109224960",
+});
 
 const App = () => {
   return (

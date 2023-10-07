@@ -1,3 +1,6 @@
 /.tsbuildinfo
 /static
 /node_modules
+
+# Sentry Auth Token
+.env.sentry-build-plugin
