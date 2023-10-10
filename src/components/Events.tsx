@@ -8,6 +8,10 @@ import diwali2 from "../img/Diwali2.webp";
 import svbdc1 from "../img/SVBDC1.webp";
 import svbdc2 from "../img/SVBDC2.webp";
 
+const badMethod = () => {
+  throw new Error("Bad method");
+};
+
 const Events = () => {
   return (
     <Container className="d-flex flex-grow justify-content-end">
@@ -36,6 +40,9 @@ const Events = () => {
           </a>{" "}
           for more information.
         </div>
+      </section>
+      <section>
+        <button onClick={() => badMethod()}>Break the world</button>;
       </section>
       <Carousel className="w-50">
         {[diwali1, diwali2, svbdc1, svbdc2].map((img, index) => {
