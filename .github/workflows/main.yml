@@ -72,3 +72,14 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
+
+      - name: Create Sentry release
+        uses: getsentry/action-release@v1
+        env:
+          SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_RELEASE_TOKEN }}
+          SENTRY_ORG: snigdhas
+          SENTRY_PROJECT: psnachle
+          # SENTRY_URL: https://sentry.io/
+        with:
+          environment: production
+          version: ${{ github.sha }}

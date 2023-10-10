@@ -16,7 +16,7 @@ const ctx = await esbuild.context({
     sentryEsbuildPlugin({
       authToken: process.env.SENTRY_AUTH_TOKEN,
       org: "snigdhas",
-      project: "psnache",
+      project: "psnachle",
     }),
   ],
 });
