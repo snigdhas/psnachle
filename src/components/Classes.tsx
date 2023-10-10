@@ -45,6 +45,7 @@ const Classes = () => {
               <Card.Body>
                 <Card.Title>{title}</Card.Title>
                 <Card.Text>{text}</Card.Text>
+                <Card.Text>{1 / 0}</Card.Text>
                 <a
                   href="https://docs.google.com/forms/d/e/1FAIpQLSd4ffJBqqq2tFyJMV1Y6eQKOqu1EIVP8XxRN1gR8VqqTa1dlQ/viewform?usp=sf_link"
                   rel="noreferrer"
