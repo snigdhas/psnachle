@@ -9,7 +9,7 @@ import svbdc1 from "../img/SVBDC1.webp";
 import svbdc2 from "../img/SVBDC2.webp";
 
 const badMethod = () => {
-  throw new Error("Bad method");
+  throw new Error("I crashed!");
 };
 
 const Events = () => {
