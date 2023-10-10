@@ -72,7 +72,8 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
-
+      - name: "Checkout"
+        uses: actions/checkout@v3.3.0
       - name: Create Sentry release
         uses: getsentry/action-release@v1
         env:
