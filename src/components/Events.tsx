@@ -8,8 +8,8 @@ import diwali2 from "../img/Diwali2.webp";
 import svbdc1 from "../img/SVBDC1.webp";
 import svbdc2 from "../img/SVBDC2.webp";
 
-const badMethod = () => {
-  throw new Error("I crashed!");
+const newTypeError = () => {
+  throw new TypeError("wrong type!");
 };
 
 const Events = () => {
@@ -18,6 +18,9 @@ const Events = () => {
       <Helmet>
         <title>Events</title>
       </Helmet>
+      <section>
+        <button onClick={() => newTypeError()}>Break the world</button>;
+      </section>
       <section className="w-50 text-light">
         <h3 className="pt-4 text-center">Event Choreography</h3>
         <div className="p-4">
@@ -40,9 +43,6 @@ const Events = () => {
           </a>{" "}
           for more information.
         </div>
-      </section>
-      <section>
-        <button onClick={() => badMethod()}>Break the world</button>;
       </section>
       <Carousel className="w-50">
         {[diwali1, diwali2, svbdc1, svbdc2].map((img, index) => {
