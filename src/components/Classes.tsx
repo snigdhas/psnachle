@@ -9,6 +9,10 @@ import groupSession from "../img/group.webp";
 import performanceSeries from "../img/performance.webp";
 import privateSession from "../img/private.webp";
 
+const newError = () => {
+  throw new Error("something is wrong!");
+};
+
 const Classes = () => {
   const classes = [
     {
@@ -52,6 +56,7 @@ const Classes = () => {
                 >
                   <Button>{button}</Button>
                 </a>
+                <button onClick={() => newError()}>Try Me</button>;
               </Card.Body>
             </Card>
           </>

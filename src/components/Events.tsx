@@ -9,7 +9,7 @@ import svbdc1 from "../img/SVBDC1.webp";
 import svbdc2 from "../img/SVBDC2.webp";
 
 const newTypeError = () => {
-  throw new TypeError("wrong type!");
+  throw new TypeError("another wrong type!");
 };
 
 const Events = () => {
