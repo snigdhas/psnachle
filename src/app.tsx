@@ -19,7 +19,10 @@ import "./app.css";
 Sentry.init({
   dsn: "https://d5d402bf10704e198bfe7a0076903c36@o1.ingest.us.sentry.io/4505530367541248",
 });
-
+<script
+  crossOrigin="anonymous"
+  src="https://js.sentry-cdn.com/d5d402bf10704e198bfe7a0076903c36.min.js"
+/>;
 const App = () => {
   return (
     <HelmetProvider>
