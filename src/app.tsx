@@ -17,7 +17,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./app.css";
 
 Sentry.init({
-  dsn: "https://df1827e239b82c0d2560a6a16a5bc0ef@o4504532816560128.ingest.us.sentry.io/4506006109224960",
+  dsn: "https://1d237800dfc54b398959180395a667af@o19635.ingest.us.sentry.io/4504928460865536",
 });
 const App = () => {
   return (
